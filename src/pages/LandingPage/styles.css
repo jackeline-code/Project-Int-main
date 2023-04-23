@@ -1,0 +1,114 @@
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* background: linear-gradient(to bottom, var(--bg-color), var(--primary-color), var(--secondary-color), var(--third-color), var(--fourth-color)); */
+    background: url("../../assets/bg-image2.jpg") no-repeat fixed center;
+    position: relative;
+}
+
+.content img {
+    position: absolute;
+    left: .5rem;
+    filter: drop-shadow(.25rem .25rem .125rem rgba(0, 0, 0, 0.7));
+    /* bottom: -7rem; */
+}
+
+.main {
+    width: 350px;
+    height: 500px;
+    background: linear-gradient(to top, #FFFFFF, #FFFFFF, var(--bg-color), var(--primary-color), var(--secondary-color), var(--third-color), var(--fourth-color));
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 5px 20px 50px #000;
+}
+
+#chk {
+    display: none;
+}
+
+.signup {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.label-signup, .label-login {
+    color: #FFF;
+    font-size: 2.3em;
+    font-family: var(--main-font);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin: 60px;
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+}
+
+.input-fullName,
+.input-email,
+.input-password {
+    width: 60%;
+    height: 20px;
+    background: #E0DEDE;
+    display: flex;
+    justify-content: center;
+    font-family: var(--main-font);
+    margin: 20px auto;
+    padding: 16px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.signup-button,
+.login-button {
+    width:60%;
+    height: 32px;
+    margin: 0 auto;
+    display: block;
+    justify-content: center;
+    color: #FFF;
+    background: var(--fourth-color);
+    font-size: 1em;
+    font-weight: bold;
+    font-family: var(--main-font);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+.signup-button:hover,
+.login-button:hover {
+    background: var(--third-color);
+    color: #000000;
+}
+
+.login {
+    height: 460px;
+    background: #FFF;
+    border-radius: 60% / 10%;
+    transform: translateY(-180px);
+    transition: ease-in-out 0.8s;
+}
+
+.login .label-login {
+    color: var(--fourth-color);
+    transform: scale(.6);
+    padding-top: 16px;
+}
+
+#chk:checked ~ .login {
+    transform: translateY(-500px);
+}
+
+#chk:checked ~ .login .label-login {
+    transform: scale(1);
+}
+
+#chk:checked ~ .signup .label-signup {
+    transform: scale(.6);
+}

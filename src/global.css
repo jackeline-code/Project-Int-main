@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scrollbar-color:  var(--fourth-color) var(--primary-color);
+    scrollbar-width: thin;
+}
+
+:root {
+    --bg-color: #A9F04D;
+    --primary-color: #3DDB8F;
+    --secondary-color: #2CB8B2;
+    --third-color: #268FBE;
+    --fourth-color: #551BB3;
+
+    --main-font: "Alkatra", cursive;
+}
